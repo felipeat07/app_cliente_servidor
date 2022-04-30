@@ -1,4 +1,5 @@
 module.exports = function(application){
+	
 	application.get('/', function(req, res){
 
 		res.format({
@@ -12,5 +13,10 @@ module.exports = function(application){
 				res.json(retorno);
 			}
 		});
+	});
+
+	application.post('/', function(req, res){
+		var dados = req.body;
+		res.send(dados);
 	});
 }
