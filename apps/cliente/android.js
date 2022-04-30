@@ -2,7 +2,7 @@ var http = require('http');
 
 var opcoes = {
     hostname: 'localhost',
-    port: 3000,
+    port: 80,
     path: '/',
     headers: {
         'Accept': 'application/json'
